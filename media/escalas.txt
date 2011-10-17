@@ -1,0 +1,10 @@
+010 08000 018 415 prop1.tar.gz 
+034 08000 125 075 prop2.tar.gz 
+076 06000 002 380 prop3.tar.gz 
+091 08000 002 380 prop4.tar.gz 
+118 08000 280 402 prop5.tar.gz 
+152 09000 620 370 prop6.tar.gz 
+192 06000 620 370 prop8.tar.gz 
+226 06000 018 415 prop7.tar.gz 
+248 08000 280 402 prop9.tar.gz 
+270 08000 125 075 prop10.tar.gz

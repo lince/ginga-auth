@@ -1,0 +1,315 @@
+argv = 'Propagandas.ncl' nclFile = 'Propagandas.ncl'
+ginga main() NCLFILE = /root/Desktop/Prop16-6/Propagandas.ncl
+Banco de dados opened !
+commandline read: ginga
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.4.1 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2009  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Single Application Core. (2009-12-23 07:32) 
+(*) Direct/Thread: Started 'VT Switcher' (21807) [CRITICAL OTHER/OTHER 0/0] <10485760>...
+(*) Direct/Thread: Started 'VT Flusher' (21808) [DEFAULT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/FBDev: Found 'VESA VGA' (ID 0) with frame buffer at 0xf0000000, 1200k (MMIO 0x00000000, 0k)
+(*) Direct/Thread: Started 'Keyboard Input' (21809) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: Keyboard 0.9 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (21810) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: Macintosh mouse button emulatio (1) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (21811) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: AT Translated Set 2 keyboard (2) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (21812) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: ImPS/2 Generic Wheel Mouse (3) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (21813) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: PC Speaker (4) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (21814) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: Power Button (FF) (5) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'PS/2 Input' (21815) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: IMPS/2 Mouse 1.0 (directfb.org)
+(*) DirectFB/Genefx: MMX detected and enabled
+(*) DirectFB/Graphics: MMX Software Rasterizer 0.6 (directfb.org)
+(*) DirectFB/Core/WM: Default 0.3 (directfb.org)
+(#) DirectFBError [gingacc-systemio DFBDeviceScreen TestConfig error: ]: Not supported!
+InputManager::initializeInputIntervalTime imperative = '0' declarative = '200'
+ginga main() NCLFILE = /root/Desktop/Prop16-6/Propagandas.ncl
+PresentationEngineManager::openNclFile document process time: 0
+FormatterMediator::printData(0x9c4bea8) baseId: -1 playerId: /root/Desktop/Prop16-6/Propagandas.ncl devClass: 0 x: 0 y: 0 w: 640 h: 480 enableGfx: 1 parentDocId:  docId: 
+(!) Direct/Interface: Unable to dlopen `/usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_pnm.so'!
+    --> /usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_pnm.so: undefined symbol: direct_config
+(!) Direct/Interface: Unable to dlopen `/usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_bmp.so'!
+    --> /usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_bmp.so: undefined symbol: direct_config
+(*) Direct/Interface: Loaded 'PNG' implementation of 'IDirectFBImageProvider'.
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+BroadcastSocketService::discoverBroadcastAddress interfaceName: 'eth0
+PresentationContext::initializeSystemValues 
+AuthenticationServer::start(): socket created
+AuthenticationServer::start(): binding Socket
+FormatterFocusManager::setKeyHandler(0x9eed738) isHandler '1' this->isHandler '0' parentManager '0'
+FormatterMediator::FormatterMediator(0x9c4bea8) isEmbedded = '0'
+NclComponentsConverter::addLinkToContext role set with less than minimum binds.
+TimeStamp: 0.419
+ComponentManager::releaseComponentFromObject 'NclDocumentConverter'
+PrivateBaseContext::addDocument id='simulador_tv' url='/root/Desktop/Prop16-6/Propagandas.ncl' all done
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+FormatterMediator::getDepUriFromNode checking descriptor 'dVideo1'
+FormatterMediator::getDepUriFromNode checking descriptor 'dluaSocket'
+FormatterMediator::getDepUriFromNode checking descriptor 'dVideo1'
+FormatterMediator::getDepUriFromNode checking descriptor 'dVideo1'
+FormatterMediator::getDepUriFromNode checking descriptor 'dlua'
+FormatterMultiDevice::addActiveUris activeBaseUri=/root/Desktop/Prop16-6/
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/video1/dVideo1' TimeStamp: 0.708
+(*) Direct/Interface: Loaded 'Xine' implementation of 'IDirectFBVideoProvider'.
+audio_alsa_out : supported modes are 8bit 16bit 24bit mono stereo (4-channel not enabled in xine config) (4.1-channel not enabled in xine config) (5-channel not enabled in xine config) (5.1-channel not enabled in xine config) (a/52 and DTS pass-through not enabled in xine config)
+xine: found input plugin  : file input plugin
+failed to read 8 bytes at pos 37354738
+xine: found demuxer plugin: AVI/RIFF demux plugin
+ffmpeg_audio_dec: increasing buffer to 98304 to avoid overflow.
+ffmpeg_video_dec: direct rendering enabled
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop16-6/media/video1.avi'
+void AVPlayer::play(/root/Desktop/Prop16-6/media/video1.avi)
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua/dluaSocket' TimeStamp: 0.868
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua1/dVideo1' TimeStamp: 0.868
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua2/dVideo1' TimeStamp: 0.868
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop16-6/media/AdSchedulerReceiver.lua'
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop16-6/media/AdSynchronizer.lua'
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop16-6/media/propsocket.lua'
+AuthenticationServer::start(): client 127.0.0.1 connected
+FormatterScheduler::runAction takes '24' ms to start '-1/simulador_tv/lua2/dVideo1'
+FormatterScheduler::runAction takes '186' ms to start '-1/simulador_tv/video1/dVideo1'
+
+ERROR: Clustering failed!
+
+DataInterface::DataInterface(): open file at dir /root/Desktop/Prop16-6/media
+ImplicitContextManager::guessImplicitUser: get TV metadata = Dirty Dance (1997), Cine Pipoca, Filme, Musical
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+ScaleReloader 
+ScaleReloader 
+LocalAdvertisingModule::AdSynchronizer: [1] started
+________tf : 10000
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+FormatterScheduler::runAction takes '37' ms to start '-1/simulador_tv/lua1/dVideo1'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 
+propnova.lua
+propmedia/Prop3.png
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [1] Prop sended
+LocalAdvertisingModule::AdSynchronizer: [2] started
+ScaleReloader 
+LocalAdvertisingModule::AdSynchronizer: [1] started
+________tf : 28000
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+classe : ncl
+type : presentation
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 10.983
+FormatterPlayerAdapter::createPlayer for '/tmp/luaprop.lua'
+FormatterScheduler::runAction takes '10125' ms to start '-1/simulador_tv/lua/dluaSocket'
+video_out: throwing away image with pts 920244 because it's too old (diff : 4566).
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+(*) Direct/Interface: Loaded 'FT2' implementation of 'IDirectFBFont'.
+video_out: throwing away image with pts 931506 because it's too old (diff : 3832).
+video_out: throwing away image with pts 950274 because it's too old (diff : 3787).
+FormatterScheduler::runAction takes '507' ms to start '-1/simulador_tv/luaexibe/dlua'
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+200 frames delivered, 0 frames skipped, 3 frames discarded
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [4] curiProf: 
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+LocalAdvertisingModule::AdSynchronizer: [2] started
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 20.995
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+TimeStamp: 22.035
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 22.035
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+ImplicitContextManager::guessImplicitUser: get TV metadata = Pretty Woman (1990), Cine Pipoca, Filme, Romance
+fixing sound card drift by 1419 pts
+200 frames delivered, 5 frames skipped, 0 frames discarded
+fixing sound card drift by 1457 pts
+200 frames delivered, 4 frames skipped, 0 frames discarded
+fixing sound card drift by 1263 pts
+fixing sound card drift by 1349 pts
+fixing sound card drift by 1391 pts
+200 frames delivered, 1 frames skipped, 0 frames discarded
+ImplicitContextManager::guessImplicitUser: get TV metadata = Rocky (1976), Cine Acao, Filme, Acao
+fixing sound card drift by 2590 pts
+200 frames delivered, 1 frames skipped, 0 frames discarded
+fixing sound card drift by 2928 pts
+fixing sound card drift by 2296 pts
+fixing sound card drift by 1579 pts
+200 frames delivered, 2 frames skipped, 0 frames discarded
+fixing sound card drift by 1262 pts
+200 frames delivered, 2 frames skipped, 0 frames discarded
+fixing sound card drift by 1600 pts
+video_out: throwing away image with pts 14573970 because it's too old (diff : 4882).
+fixing sound card drift by 1411 pts
+200 frames delivered, 1 frames skipped, 1 frames discarded
+fixing sound card drift by 2088 pts
+video_out: throwing away image with pts 17152413 because it's too old (diff : 13484).
+video_out: throwing away image with pts 17155808 because it's too old (diff : 10089).
+video_out: throwing away image with pts 17159215 because it's too old (diff : 6682).
+fixing sound card drift by 2428 pts
+200 frames delivered, 1 frames skipped, 3 frames discarded
+ImplicitContextManager::guessImplicitUser: get TV metadata = Liar Liar (1987), Cine Acao, Filme, Comedia
+video_out: throwing away image with pts 17304824 because it's too old (diff : 3598).
+fixing sound card drift by 2356 pts
+200 frames delivered, 5 frames skipped, 1 frames discarded
+200 frames delivered, 3 frames skipped, 0 frames discarded
+200 frames delivered, 4 frames skipped, 0 frames discarded
+200 frames delivered, 1 frames skipped, 0 frames discarded
+ImplicitContextManager::guessImplicitUser: get TV metadata = Greasy (1978), Cine Pipoca, Filme, Musical
+fixing sound card drift by 1502 pts
+fixing sound card drift by 2353 pts
+video_out: throwing away image with pts 23009350 because it's too old (diff : 3761).
+200 frames delivered, 0 frames skipped, 1 frames discarded
+fixing sound card drift by 1903 pts
+fixing sound card drift by -1355 pts
+200 frames delivered, 5 frames skipped, 0 frames discarded
+200 frames delivered, 2 frames skipped, 0 frames discarded
+200 frames delivered, 1 frames skipped, 0 frames discarded
+200 frames delivered, 1 frames skipped, 0 frames discarded
+video_out: throwing away image with pts 26357528 because it's too old (diff : 4606).
+video_out: throwing away image with pts 26647962 because it's too old (diff : 3642).
+demux_avi: video and audio streams are ended
+200 frames delivered, 1 frames skipped, 2 frames discarded
+200 frames delivered, 1 frames skipped, 0 frames discarded
+fixing sound card drift by 1776 pts
+(!) [21796:    0.000] --> Caught signal 15 (sent by pid 19014, uid 0) <--
+ (!!!)  *** WARNING [still objects in 'Window Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+ (!!!)  *** WARNING [still objects in 'Layer Region Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+ (!!!)  *** WARNING [still objects in 'Layer Context Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+ (!!!)  *** WARNING [still objects in 'Surface Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+video_out: throwing away image with pts 28402767 because it's too old (diff : 47089571).
+video_out: throwing away image with pts 28406565 because it's too old (diff : 47085773).
+video_out: throwing away image with pts 28410362 because it's too old (diff : 47081976).
+video_out: throwing away image with pts 28414157 because it's too old (diff : 47078181).
+video_out: throwing away image with pts 28417951 because it's too old (diff : 47074387).
+video_out: throwing away image with pts 28421744 because it's too old (diff : 47070594).
+video_out: throwing away image with pts 28425535 because it's too old (diff : 47066803).
+video_out: throwing away image with pts 28429325 because it's too old (diff : 47063013).
+video_out: throwing away image with pts 28433114 because it's too old (diff : 47059224).
+video_out: throwing away image with pts 28436902 because it's too old (diff : 47055436).
+video_out: throwing away image with pts 28440688 because it's too old (diff : 47051650).
+200 frames delivered, 4 frames skipped, 11 frames discarded
+video_out: throwing away image with pts 28448257 because it's too old (diff : 47049860).
+video_out: throwing away image with pts 28452040 because it's too old (diff : 47046077).
+video_out: throwing away image with pts 28455822 because it's too old (diff : 47042295).
+video_out: throwing away image with pts 28459603 because it's too old (diff : 47038514).
+video_out: throwing away image with pts 28463384 because it's too old (diff : 47034733).
+video_out: throwing away image with pts 28467164 because it's too old (diff : 47030953).
+video_out: throwing away image with pts 28470943 because it's too old (diff : 47027174).
+video_out: throwing away image with pts 28474721 because it's too old (diff : 47023396).
+video_out: throwing away image with pts 28478498 because it's too old (diff : 47019619).
+video_out: throwing away image with pts 28482274 because it's too old (diff : 47015843).
+video_out: throwing away image with pts 28486050 because it's too old (diff : 47012067).
+video_out: throwing away image with pts 28493599 because it's too old (diff : 47011538).
+video_out: throwing away image with pts 28497372 because it's too old (diff : 47007765).
+video_out: throwing away image with pts 28501145 because it's too old (diff : 47003992).
+video_out: throwing away image with pts 28504917 because it's too old (diff : 47000220).
+video_out: throwing away image with pts 28508689 because it's too old (diff : 46996448).
+video_out: throwing away image with pts 28512460 because it's too old (diff : 46992677).
+video_out: throwing away image with pts 28516230 because it's too old (diff : 46988907).
+video_out: throwing away image with pts 28520000 because it's too old (diff : 46985137).
+video_out: throwing away image with pts 28523769 because it's too old (diff : 46981368).
+video_out: throwing away image with pts 28527538 because it's too old (diff : 46977599).
+video_out: throwing away image with pts 28531306 because it's too old (diff : 46973831).
+(!) [21834:    0.183] --> Caught signal 11 (at 0xaec05008, invalid address) <--

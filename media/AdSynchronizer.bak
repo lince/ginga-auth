@@ -1,0 +1,199 @@
+--/root/Desktop/Propagandas/media
+
+--------------------------------------------------------------
+-- Implementação do AdSynchronizer
+--------------------------------------------------------------
+require 'settings'
+local socket = require("socket")
+local host = "127.0.0.1"
+
+local lastProf
+local curiProf
+local iProf
+local default_changeUser
+local lastUser
+local scale = {}
+local pos = 0 
+local posmax= 0
+local t = 0
+local taux = 0
+
+function Send()
+
+	port = 4444
+
+	SckHnd = socket.connect (host, port)
+	if SckHnd then	
+		if (scale[pos]~=nil)then
+			linha = scale[pos]
+			os.execute("cp /root/Desktop/Propagandas/media/Propagandas/" .. string.sub(linha,19,31) .. " /tmp/")
+			os.execute("tar -vzxf /tmp/".. string.sub(linha,19,31) ..  "-C /tmp/" .. string.sub(linha,19,31) .. " -C /tmp/")
+			os.execute("rm /tmp/".. string.sub(linha,19,31))
+			SckHnd:send(tonumber(string.sub(linha,5,9)) .. "\n")
+			SckHnd:send(tonumber(string.sub(linha,11,13)).. "\n")
+			SckHnd:send(tonumber(string.sub(linha,15,17)).. "\n")
+			print ("LocalAdvertisingModule::AdSynchronizer: [1] Prop sended")
+			SckHnd:close()
+			pos = pos+1
+			if(scale[pos]~=nil)and(pos <= posMAX)then
+				event.timer(0,AdSynchronizer)
+			else
+				ScaleReloader()
+				event.timer(0,AdSynchronizer)
+			end
+		else
+			print("LocalAdvertisingModule::AdSynchronizer: [1] Prop not sended") 
+			ScaleReloader()
+		end
+	else
+		print ("LocalAdvertisingModule::AdSynchronizer: [1] Connection error")
+	end
+
+return true
+end
+
+function ScaleReloader()
+
+	print("ScaleReloader ")
+	i=0
+	arqLeitura = io.open("escalaNova.txt","r")
+	if arqLeitura then
+		linha = arqLeitura:read()		
+		scale[i]=linha
+		i=i+1
+		while (linha ~= nil) do
+			linha = arqLeitura:read()	
+			if linha ~= nil then
+				scale[i]=linha	
+				i=i+1
+			end
+		end
+		arqLeitura:close()
+	
+	end
+	posMAX=i
+
+return true
+end
+
+function AdSynchronizer()
+
+	ScaleReloader()
+	print ("LocalAdvertisingModule::AdSynchronizer: [1] started")	
+	if(scale[pos]==nil)then
+		ScaleReloader()
+		event.timer(0,AdSynchronizer)
+	else
+		taux=0
+		taux = t
+		t=0
+		t=tonumber(string.sub(scale[pos],1,3))*1000
+		tf= (t - taux)
+		print("________tf : ".. tf)
+		event.timer(tf , Send)
+
+		print ("LocalAdvertisingModule::AdSynchronizer: [1] finished")	
+	end
+return true
+end
+
+
+--------------------------------------------------------------
+-- Implementação do AdSynchronizerServer
+--------------------------------------------------------------
+
+function AdSynchronizerServer()
+
+	Addr=host
+	local Port = 1111
+	local SckHnd, ErrStr, ClientHnd
+
+	print ("LocalAdvertisingModule::AdSynchronizer: [2] started")
+		
+	SckHnd  = socket.connect(Addr, Port)
+	if SckHnd then
+
+		print("LocalAdvertisingModule::AdSynchronizer: [2] Socket acepted")
+		Conf = SckHnd:receive()
+		if not(Conf) then
+			
+			print ("LocalAdvertisingModule::AdSynchronizer: [2] Package reciever fault: " .. ErrStr)
+		end
+							
+		SckHnd:close()
+	--else
+		--print ("LocalAdvertisingModule::AdSynchronizer: [2] Socket fault " )
+
+	end
+
+	event.timer(1000,AdSynchronizerServer)
+end
+
+--------------------------------------------------------------
+-- Implementação do AdSynchronizerClient
+--------------------------------------------------------------
+
+function AdSynchronizerClient()
+
+	local Port = 2222
+	local SckHnd, ErrStr
+
+	Addr=host
+	print ("LocalAdvertisingModule::AdSynchronizer: [3] started")
+
+	SckHnd, ErrStr = socket.connect (Addr, Port, "127.0.0.1", 0)
+	if SckHnd then
+		SckHnd:send(iProf)
+		print ("LocalAdvertisingModule::AdSynchronizer: [3] User has changed")		
+		SckHnd:close()
+	else
+		print ("LocalAdvertisingModule::AdSynchronizer: [3] Connection error")
+	end
+end
+
+--------------------------------------------------------------
+-- Atualiza valores de curiProf e iProf
+--------------------------------------------------------------
+
+function AtualizaVariaveis()
+	valor = assert(loadstring("return settings." .. "default.curiprof"))()
+	print ("LocalAdvertisingModule::AdSynchronizer: [4] curiProf: " .. valor )
+	if not (valor == "") then
+		print ("ENTROOOOOOOOOOUUUUU")
+		curiProf = valor
+		posix = string.find(curiProf,":")+1
+		iProf = assert(loadstring("return settings.".."default.iprof" .. string.sub(curiProf,posix)))()
+		print ("LocalAdvertisingModule::AdSynchronizer: [4] curiProf: " .. curiProf .. " iProf: " .. iProf .. "")
+	end
+end
+
+
+
+--------------------------------------------------------------
+-- 
+--------------------------------------------------------------
+function UserCheck()
+	
+	AtualizaVariaveis()	
+	if not(lastProf == curiProf) then
+		pos=0
+		ScaleReloader()
+		AdSynchronizerClient()
+		lastProf = curiProf
+	end
+	event.timer(500,UserCheck)
+end
+
+
+--------------------------------------------------------------
+-- Corpo do Programa -> chama as funcoes
+--------------------------------------------------------------
+--AtualizaVariaveis()
+
+--lastProf = curiprof
+
+AdSynchronizerServer()
+
+ScaleReloader()
+AdSynchronizer()
+--UserChec

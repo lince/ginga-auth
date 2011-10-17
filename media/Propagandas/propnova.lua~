@@ -1,0 +1,74 @@
+local img   = canvas:new('propmedia/Prop4.png')
+local dx,dy = img:attrSize()
+local fundo = {img=img,x=0,y=380,dx=dx,dy=dy}
+
+local img1   = canvas:new('propmedia/sais.png')
+local dx,dy = img:attrSize()
+local foto = {img1=img1,x=5,y=393,dx=dx,dy=dy}
+
+
+local menorsz=20
+
+function desenhafundo()
+	canvas:compose(fundo.x,fundo.y,fundo.img)
+	canvas:compose(foto.x,foto.y,foto.img1)
+	canvas:flush()
+end
+
+function calculasz( t, sz)
+	canvas:attrColor('white')
+	canvas:attrFont('vera',sz)
+	tx,ty = canvas:measureText(t)
+
+	while (tx >= (fundo.dx-300))do
+			sz=sz-1
+			canvas:attrFont('vera',sz)
+			tx,ty = canvas:measureText(t)
+	end
+
+	if (sz<menorsz)then
+		menorsz=sz
+	end
+end
+
+function escrevetexto( t, szf, x, y)
+	canvas:attrColor('white')
+	canvas:attrFont('vera',szf)
+	canvas:drawText( x, y, t)
+	canvas:flush()
+return sz
+end
+
+frase1="Sais de banho espumantes"
+frase2="Centenas de produtos aromatizantes.           "
+frase3="Pronta entrega para todo o Brasil.        "
+frase4="Pagamento com cartao de credito 3x sem juros,"
+frase5="sedex a cobrar e deposito"
+
+calculasz(frase1,20)
+calculasz(frase2,20)
+calculasz(frase3,20)
+calculasz(frase4,20)
+calculasz(frase5,20)
+
+l1=390
+l2=l1+20
+l3=l2+menorsz
+l4=l3+menorsz
+l5=l4+menorsz
+
+while (l5 > 460)do
+	menorsz = menorsz-1
+
+	l2=l1+20
+	l3=l2+menorsz
+	l4=l3+menorsz
+	l5=l4+menorsz
+end
+
+desenhafundo()
+escrevetexto(frase1,20,90,l1)
+escrevetexto(frase2,menorsz,100,l2)
+escrevetexto(frase3,menorsz,100,l3)
+escrevetexto(frase4,menorsz,100,l4)
+escrevetexto(frase5,menorsz,90,l5)
